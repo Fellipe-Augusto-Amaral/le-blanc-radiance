@@ -40,7 +40,8 @@
   --color-sand: var(--sand);
   --color-rose: var(--rose);
   --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
 }
 
 :root {
@@ -54,9 +55,10 @@
   --primary: oklch(0.42 0.03 55);
   --primary-foreground: oklch(0.985 0.006 85);
   --secondary: oklch(0.945 0.014 80);
-  --secondary-foreground: oklch(0.36 0.022 55);
+  --secondary-foreground: oklch(0.3 0.022 55);
   --muted: oklch(0.955 0.011 82);
-  --muted-foreground: oklch(0.53 0.017 60);
+  --muted-foreground: oklch(0.45 0.019 60);
+
   --accent: oklch(0.93 0.022 75);
   --accent-foreground: oklch(0.36 0.022 55);
   --destructive: oklch(0.55 0.18 27);
