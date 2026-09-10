@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import brandCover from "@/assets/brand/le-blanc-capa.jpg.asset.json";
 import { mensagemPadrao, site, whatsappLink } from "@/config/site";
 import { Reveal } from "../Reveal";
 
@@ -46,15 +46,17 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={150}>
-          <div className="relative">
-            <div className="absolute -inset-3 -z-10 rounded-t-[14rem] border border-gold/30" />
-            <img
-              src={heroImg}
-              width={1280}
-              height={1600}
-              alt="Mulher de perfil com pele luminosa e traços naturais realçados"
-              className="h-[26rem] w-full rounded-t-[14rem] object-cover object-center sm:h-[34rem] lg:h-[40rem]"
-            />
+          <div className="relative mx-auto w-full max-w-[34rem]">
+            <div className="absolute -inset-3 -z-10 border border-gold/30" />
+            <div className="flex aspect-square items-center justify-center bg-card p-8 shadow-[var(--shadow-card)] sm:p-12">
+              <img
+                src={brandCover.url}
+                width={150}
+                height={150}
+                alt="Le Blanc Concept — Nanopigmentação e Harmonização Facial"
+                className="h-full w-full object-contain"
+              />
+            </div>
           </div>
         </Reveal>
       </div>

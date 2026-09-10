@@ -1,5 +1,44 @@
-import { ImagePlus } from "lucide-react";
+import { Maximize2 } from "lucide-react";
+import naturalLips from "@/assets/results/natural-lips.png.asset.json";
+import nanobrows from "@/assets/results/nanobrows.png.asset.json";
+import nanolips from "@/assets/results/nanolips.png.asset.json";
+import nanoeyes from "@/assets/results/nanoeyes.png.asset.json";
+import nanobrowsNatural from "@/assets/results/nanobrows-natural.png.asset.json";
+import olhosSobrancelhas from "@/assets/results/olhos-sobrancelhas.png.asset.json";
 import { Reveal } from "../Reveal";
+
+const resultados = [
+  {
+    imagem: naturalLips.url,
+    titulo: "Natural Lips",
+    alt: "Resultado real de Natural Lips em diferentes ângulos",
+  },
+  {
+    imagem: nanobrows.url,
+    titulo: "Nanobrows",
+    alt: "Resultado real de Nanobrows com fios delicados e naturais",
+  },
+  {
+    imagem: nanolips.url,
+    titulo: "Nanolips",
+    alt: "Resultado real de Nanolips em quatro ângulos",
+  },
+  {
+    imagem: nanoeyes.url,
+    titulo: "Nanoeyes",
+    alt: "Resultado real de Nanoeyes em quatro ângulos",
+  },
+  {
+    imagem: nanobrowsNatural.url,
+    titulo: "Nanobrows",
+    alt: "Resultado real de Nanobrows com acabamento natural",
+  },
+  {
+    imagem: olhosSobrancelhas.url,
+    titulo: "Olhos & sobrancelhas",
+    alt: "Seleção de resultados reais em olhos e sobrancelhas",
+  },
+] as const;
 
 export function Resultados() {
   return (
@@ -19,16 +58,34 @@ export function Resultados() {
           </p>
         </Reveal>
 
-        {/* Espaços reservados: substituir por fotografias reais de antes e depois. */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3, 4, 5, 6].map((n, i) => (
-            <Reveal key={n} delay={i * 60}>
-              <div className="flex aspect-[4/5] flex-col items-center justify-center gap-3 rounded-sm border border-dashed border-gold/40 bg-sand/60 p-6 text-center">
-                <ImagePlus size={22} strokeWidth={1.2} className="text-gold" aria-hidden="true" />
-                <p className="text-sm text-muted-foreground">
-                  Espaço reservado para foto real de antes e depois
-                </p>
-              </div>
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+          {resultados.map((resultado, i) => (
+            <Reveal key={`${resultado.titulo}-${i}`} delay={i * 60}>
+              <a
+                href={resultado.imagem}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Ampliar resultado: ${resultado.titulo}`}
+                className="group relative block aspect-[4/5] overflow-hidden bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              >
+                <img
+                  src={resultado.imagem}
+                  alt={resultado.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
+                />
+                <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 bg-gradient-to-t from-primary/90 via-primary/55 to-transparent px-4 pb-4 pt-16 text-primary-foreground sm:px-5 sm:pb-5">
+                  <span className="font-display text-lg leading-none sm:text-2xl">
+                    {resultado.titulo}
+                  </span>
+                  <Maximize2
+                    size={17}
+                    strokeWidth={1.5}
+                    className="shrink-0 opacity-80"
+                    aria-hidden="true"
+                  />
+                </span>
+              </a>
             </Reveal>
           ))}
         </div>
