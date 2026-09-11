@@ -5,8 +5,8 @@ export const site = {
   profissional: "Dra. Ângela Collet",
   endereco: "Rua 24 de Maio, 2027 – Curitiba – PR",
   cidade: "Curitiba – PR",
-  whatsappNumero: "554187035188",
-  whatsappExibicao: "(41) 8703-5188",
+  whatsappNumero: "5541987035188",
+  whatsappExibicao: "(41) 98703-5188",
   instagramUrl: "https://www.instagram.com/leblanc.concept/",
   instagramHandle: "@leblanc.concept",
   mapaUrl:
