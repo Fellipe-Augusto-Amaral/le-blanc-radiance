@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-border bg-secondary/60">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
         <div>
-          <Logo />
+          <Logo size="footer" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Estética facial avançada, harmonização e nanopigmentação em Curitiba, com
             resultados naturais e atendimento individualizado.

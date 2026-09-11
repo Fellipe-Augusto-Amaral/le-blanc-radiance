@@ -72,10 +72,15 @@ export function Faq() {
                   </h3>
                   <div
                     id={`faq-${i}`}
-                    hidden={!isOpen}
-                    className="pb-6 text-sm leading-relaxed text-muted-foreground"
+                    className={`grid transition-all duration-500 ease-out ${
+                      isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
                   >
-                    {item.a}
+                    <div className="overflow-hidden">
+                      <p className="pb-6 text-sm leading-relaxed text-muted-foreground">
+                        {item.a}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

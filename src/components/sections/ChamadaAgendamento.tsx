@@ -17,7 +17,7 @@ export function ChamadaAgendamento() {
             href={whatsappLink(mensagemPadrao)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-9 inline-flex items-center justify-center rounded-full bg-primary px-9 py-4 text-xs tracking-[0.2em] uppercase text-primary-foreground transition-colors duration-300 hover:bg-primary/90"
+            className="btn-base btn-primary mt-9"
           >
             Agendar pelo WhatsApp
           </a>

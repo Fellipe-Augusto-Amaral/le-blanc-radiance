@@ -173,7 +173,7 @@ export function Formulario() {
 
       <button
         type="submit"
-        className="mt-7 w-full rounded-full bg-primary px-8 py-4 text-xs tracking-[0.2em] uppercase text-primary-foreground transition-colors duration-300 hover:bg-primary/90"
+        className="btn-base btn-primary mt-7 w-full"
       >
         Solicitar contato
       </button>
