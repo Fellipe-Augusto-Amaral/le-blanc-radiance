@@ -44,7 +44,7 @@ export const Route = createFileRoute("/")({
             addressRegion: "PR",
             addressCountry: "BR",
           },
-          telephone: "+5541988882727",
+          telephone: "+554187035188",
           sameAs: [site.instagramUrl],
           areaServed: "Curitiba, PR",
           makesOffer: [

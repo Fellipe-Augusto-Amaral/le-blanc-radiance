@@ -5,10 +5,12 @@ export function Reveal({
   children,
   delay = 0,
   className = "",
+  animation = "reveal",
 }: {
   children: ReactNode;
   delay?: number;
   className?: string;
+  animation?: "reveal" | "slide-right";
 }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
   return (
@@ -16,7 +18,7 @@ export function Reveal({
       ref={ref}
       data-visible={visible}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`reveal ${className}`}
+      className={`${animation} ${className}`}
     >
       {children}
     </div>
