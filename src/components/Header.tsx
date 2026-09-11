@@ -18,7 +18,7 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-border bg-background/90 backdrop-blur-md"
+          ? "border-b border-border bg-background/95 shadow-[var(--shadow-card)] backdrop-blur-md"
           : "border-b border-transparent bg-background/40 backdrop-blur-sm"
       }`}
     >
@@ -33,7 +33,7 @@ export function Header() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="relative text-sm tracking-wide text-muted-foreground transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-foreground hover:after:w-full"
+                  className="relative text-[0.95rem] font-medium tracking-wide text-muted-foreground transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:text-foreground hover:after:w-full"
                 >
                   {l.label}
                 </a>
@@ -47,7 +47,7 @@ export function Header() {
             href={whatsappLink(mensagemPadrao)}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-primary px-6 py-3 text-xs tracking-[0.18em] uppercase text-primary-foreground transition-all duration-300 hover:bg-primary/90 sm:inline-block"
+            className="btn-base btn-primary hidden !min-h-0 !px-6 !py-3 !text-[0.7rem] sm:inline-flex"
           >
             Agendar avaliação
           </a>
@@ -74,7 +74,7 @@ export function Header() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-border/60 py-4 text-sm tracking-wide text-foreground"
+                  className="block border-b border-border/60 py-4 text-[0.95rem] font-medium tracking-wide text-foreground"
                 >
                   {l.label}
                 </a>
@@ -85,7 +85,7 @@ export function Header() {
                 href={whatsappLink(mensagemPadrao)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-full bg-primary px-6 py-3 text-center text-xs tracking-[0.18em] uppercase text-primary-foreground"
+                className="btn-base btn-primary w-full"
               >
                 Agendar avaliação
               </a>
