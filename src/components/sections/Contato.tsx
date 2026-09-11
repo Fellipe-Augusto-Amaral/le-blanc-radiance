@@ -47,7 +47,7 @@ export function Contato() {
                   href={site.mapaUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-primary/25 px-6 py-3 text-xs tracking-[0.18em] uppercase text-foreground transition-colors hover:border-gold hover:text-gold"
+                  className="btn-base btn-outline !min-h-0 gap-2 !px-6 !py-3.5 !text-[0.72rem]"
                 >
                   <Navigation size={14} strokeWidth={1.5} /> Abrir no mapa
                 </a>
@@ -55,7 +55,7 @@ export function Contato() {
                   href={whatsappLink(mensagemPadrao)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-xs tracking-[0.18em] uppercase text-primary-foreground transition-colors hover:bg-primary/90"
+                  className="btn-base btn-primary !min-h-0 gap-2 !px-6 !py-3.5 !text-[0.72rem]"
                 >
                   <MessageCircle size={14} strokeWidth={1.5} /> Falar pelo WhatsApp
                 </a>
@@ -63,7 +63,7 @@ export function Contato() {
                   href={site.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-primary/25 px-6 py-3 text-xs tracking-[0.18em] uppercase text-foreground transition-colors hover:border-gold hover:text-gold"
+                  className="btn-base btn-outline !min-h-0 gap-2 !px-6 !py-3.5 !text-[0.72rem]"
                 >
                   <Instagram size={14} strokeWidth={1.5} /> Visitar Instagram
                 </a>
