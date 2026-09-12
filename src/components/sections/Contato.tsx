@@ -69,7 +69,6 @@ export function Contato() {
                 </a>
               </div>
 
-              {/* Confirmar a localização exata com a clínica antes de publicar. */}
               <div className="overflow-hidden rounded-sm border border-border">
                 <iframe
                   title="Mapa com a localização da Clínica Le Blanc Concept"
@@ -79,9 +78,6 @@ export function Contato() {
                   className="h-72 w-full"
                 />
               </div>
-              <p className="text-xs text-muted-foreground">
-                Confirme o ponto exato do mapa com a clínica antes da publicação.
-              </p>
             </div>
           </Reveal>
 
