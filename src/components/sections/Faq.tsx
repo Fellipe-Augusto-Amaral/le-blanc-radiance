@@ -13,7 +13,7 @@ export const perguntas = [
   },
   {
     q: "Onde fica a clínica?",
-    a: "A Clínica Le Blanc Concept está localizada na Rua 24 de Maio, 2027, em Curitiba – PR.",
+    a: "A Clínica Le Blanc Concept está localizada na Rua Vinte e Quatro de Maio, 2027, Rebouças, Curitiba – PR, 80220-060.",
   },
   {
     q: "Os resultados são iguais para todas as pessoas?",

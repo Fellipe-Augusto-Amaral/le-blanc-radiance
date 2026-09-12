@@ -3,16 +3,15 @@ export const site = {
   nome: "Clínica Le Blanc Concept",
   nomeCurto: "Le Blanc Concept",
   profissional: "Dra. Ângela Collet",
-  endereco: "Rua 24 de Maio, 2027 – Curitiba – PR",
+  endereco: "Rua Vinte e Quatro de Maio, 2027, Rebouças, Curitiba – PR, 80220-060",
   cidade: "Curitiba – PR",
   whatsappNumero: "5541987035188",
   whatsappExibicao: "(41) 98703-5188",
   instagramUrl: "https://www.instagram.com/leblanc.concept/",
   instagramHandle: "@leblanc.concept",
-  mapaUrl:
-    "https://www.google.com/maps/search/?api=1&query=Rua+24+de+Maio%2C+2027+-+Curitiba+-+PR",
+  mapaUrl: "https://maps.app.goo.gl/5Rf25XuoBh2piUjWA",
   mapaEmbedUrl:
-    "https://www.google.com/maps?q=Rua%2024%20de%20Maio%2C%202027%20-%20Curitiba%20-%20PR&output=embed",
+    "https://www.google.com/maps?q=Rua%20Vinte%20e%20Quatro%20de%20Maio%2C%202027%2C%20Rebou%C3%A7as%2C%20Curitiba%20-%20PR%2C%2080220-060&output=embed",
   avisoHorario:
     "Atendimento com horário agendado. Consulte a disponibilidade pelo WhatsApp.",
 } as const;

@@ -39,9 +39,10 @@ export const Route = createFileRoute("/")({
           description: descricao,
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Rua 24 de Maio, 2027",
+            streetAddress: "Rua Vinte e Quatro de Maio, 2027, Rebouças",
             addressLocality: "Curitiba",
             addressRegion: "PR",
+            postalCode: "80220-060",
             addressCountry: "BR",
           },
           telephone: "+5541987035188",
